@@ -1,24 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grant Bowers</title>
-    <style>
-        body {
-            padding: 3rem;
-            font-family: sans-serif;
-            font-size: 2rem;
-        }
-    </style>
-</head>
-<body>
-    <body>
-        <p>
-            <b>Grant Bowers</b><br>
-            <em>Type Design</em><br>
-            <small>contact(at)gbtype.com</small>
-        </p>
-    </body>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Grant Bowers</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="" />
+		<link rel="icon" href="favicon.png">
+		<style>
+body {
+	font-size: 1.2rem;
+	font-family: "Iowan Old Style", serif;
+	padding: 1rem;
+}
+
+p {
+	max-width: 30rem;
+}
+
+details {
+	margin: 0;
+}
+
+summary {
+	display: flex;
+	align-items: stretch;
+	padding: 0;
+	cursor: pointer;
+	list-style: none;
+	border-bottom: 1px solid black;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+/* Arrow */
+.arrow {
+	flex: 0 0 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.arrow::before {
+	content: "→";
+	display: block;
+	transition: transform 0.1s ease;
+}
+
+details[open] .arrow::before {
+	transform: rotate(90deg);
+}
+
+/* Column styles */
+.subtitleTitle,
+.subtitleCategory,
+.subtitleDate {
+	padding: .5rem;
+	box-sizing: border-box;
+}
+
+.subtitleTitle {
+	flex: 1 0 10rem;
+}
+
+.subtitleCategory {
+	flex: 0 0 15rem;
+}
+
+.subtitleDate {
+	flex: 0 1 18rem;
+}
+
+/* Hover */
+summary:hover {
+	color: #ff4300;
+}
+
+.subtitleHeading {
+	display: flex;
+	border-bottom: 2px solid black;
+}
+
+.subtitleHeading::before {
+	content: "";
+	flex: 0 0 2rem;
+}
+
+.subtitleHeading .subtitleTitle,
+.subtitleHeading .subtitleCategory,
+.subtitleHeading .subtitleDate {
+	padding: .5rem;
+}
+
+.content {
+	padding-top: 1.5rem;
+}
+
+footer {
+	margin-top: 2rem;
+}
+
+a {
+	color: #F75953;
+}
+
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="everything">
+				<p>Grant Bowers (2010—). Student designer. <a href="mailto:contact@gbtype.com">Email me</a></p>
+				<div class="subtitleHeading">
+					<div class='subtitleTitle'>
+						Title
+					</div>
+					<div class='subtitleCategory'>
+						Category
+					</div>
+					<div class='subtitleDate'>
+						Time
+					</div>
+				</div>
+			<!--Loch-->
+				<details>
+					<summary>
+							<span class='arrow'></span>
+							<span class='subtitleTitle'>Loch</span>
+							<span class='subtitleCategory'>Type design</span>
+							<span class='subtitleDate'>April 2026—Ongoing</span>
+					</summary>
+					<div class='content'>
+						<img class='fullWidthImage' src='assets/Lo-01.svg'>
+						<img class='fullWidthImage' src='assets/Lo-02.svg'>
+						<img class='fullWidthImage' src='assets/Lo-03.svg'>
+						<img class='fullWidthImage' src='assets/Lo-04.svg'>
+						<p>Paragraph describing Loch</p>
+					</div>
+				</details>
+			<!--Adam-->
+				<details>
+					<summary>
+							<span class='arrow'></span>
+							<span class='subtitleTitle'>Adam</span>
+							<span class='subtitleCategory'>Film</span>
+							<span class='subtitleDate'>February 2026—April 2026</span>
+					</summary>
+
+					<div class='content'>
+						<div class="gridOfImages">
+							<img class='fullWidthImage' src='assets/Ad-01.png'>
+							<img class='fullWidthImage' src='assets/Ad-02.png'>
+						</div>
+						<p>Paragraph describing Adam</p>
+					</div>
+				</details>
+			<!--Posters-->
+				<details>
+					<summary>
+							<span class='arrow'></span>
+							<span class='subtitleTitle'>Posters</span>
+							<span class='subtitleCategory'>Graphic design</span>
+							<span class='subtitleDate'>August 2024—Ongoing</span>
+					</summary>
+
+					<div class='content'>
+						<div class='imageGallery'>
+							<img class='sideBySideImage' src='assets/Po-CUSAI.png'>
+							<img class='sideBySideImage' src='assets/Po-RichOToole.png'>
+							<img class='sideBySideImage' src='assets/Po-FertDon.png'>
+						</div>
+					</div>
+					<p>Paragraph describing Posters</p>
+				</details>
+			<!--Grendel-->
+				<details>
+					<summary>
+							<span class='arrow'></span>
+							<span class='subtitleTitle'>Grendel</span>
+							<span class='subtitleCategory'>Type design</span>
+							<span class='subtitleDate'>February 2025—Ongoing</span>
+					</summary>
+
+					<div class='content'>
+						<img class='fullWidthImage' src='assets/Fo-Grendel.svg'>
+						<p>Paragraph describing Grendel</p>
+					</div>
+				</details>
+			<!--The Marque-->
+				<details>
+					<summary>
+							<span class='arrow'></span>
+							<span class='subtitleTitle'>The Marque: Voyager</span>
+							<span class='subtitleCategory'>Publication</span>
+							<span class='subtitleDate'>August 2025—May 2026</span>
+					</summary>
+
+					<div class='content'>
+						<img class='fullWidthImage' src='assets/Pu-Voyager.jpg'>
+						<p>Paragraph describing the Marque: Voyager.</p>
+					</div>
+				</details>
+			<!--Drawings-->
+				<details>
+					<summary>
+							<span class='arrow'></span>
+							<span class='subtitleTitle'>Drawings</span>
+							<span class='subtitleCategory'>Art</span>
+							<span class='subtitleDate'>July 2026—Ongoing</span>
+					</summary>
+					
+					<div class='content'>
+						<img class='fullWidthImage' src='assets/Dr-SelfPortrait.png'>
+						<img class='fullWidthImage' src='assets/Dr-FifthFloor.png'>
+						<img class='fullWidthImage' src='assets/Dr-ElizabethStreet.png'>
+						<p>Paragraph describing my drawings.</p>
+					</div>
+				</details>
+			<!--Sketches-->
+				<details>
+					<summary>
+							<span class='arrow'></span>
+							<span class='subtitleTitle'>Sketches</span>
+							<span class='subtitleCategory'></span>
+							<span class='subtitleDate'>January 2024—Ongoing</span>
+					</summary>
+					
+					<div class='content'>
+						<img class='fullWidthImage' src='assets/De-Glyphs.svg'>
+					</div>
+				</details>
+			</div>
+			<footer>
+				© 2026 Grant Bowers<br>
+				Typeface: Iowan Old Style<br>
+				Website last updated: 2026-09-14, 2:30 CST
+			</footer>
+		</main>
+	</body>
 </html>
